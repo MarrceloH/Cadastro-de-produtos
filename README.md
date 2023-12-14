@@ -27,7 +27,7 @@ Para começar a usar o programa, o usuário deve digitar o código do produto e 
 Caso o usuário digite uma opção inválida, o programa exibirá uma mensagem de erro e o usuário terá a oportunidade de tentar novamente.
 Ao longo do programa, o dicionário de estoque é atualizado a cada ação realizada pelo usuário. Portanto, as informações do estoque são sempre atualizadas e consistentes.
 
-#Funções e Métodos por Categoria:
+# Funções e Métodos por Categoria:
 
 1. Entrada/Saída (Console):
 Console.WriteLine():
