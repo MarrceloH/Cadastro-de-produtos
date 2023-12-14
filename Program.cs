@@ -1,12 +1,10 @@
     ﻿// Definição da classe Produto que representa um item em estoque
-
 class Produto
 {
     // Propriedades do produto, como nome, categoria, quantidade e preço
     public string Nome { get; set; }
     public string Categoria { get; set; }
     public int Quantidade { get; set; }
-
     public double Preço { get; set; }
 }
 
@@ -14,7 +12,6 @@ class Program
 {
     // Dicionário para armazenar produtos no estoque
     static Dictionary<string, Produto> estoque = new Dictionary<string, Produto>();
-
     static void Main()
     {
         while (true)
@@ -46,8 +43,7 @@ class Program
                     return;
                 default:
                     Console.WriteLine("Opção inválida. Tente novamente.");
-                    break;
-                  
+                    break;     
             }
         }
     }
@@ -88,9 +84,7 @@ class Program
         Console.WriteLine($"Produto {codigo} adicionado com sucesso!");
 
         Console.WriteLine();
-    
     }
-
 
     static void RemoverProduto()
     {Console.Clear();
@@ -132,8 +126,7 @@ class Program
     Console.WriteLine();
     
     }
-
-
+    
     static void ConsultarEstoque()
     {Console.Clear();
         Console.WriteLine("Estoque Atual:");
@@ -144,7 +137,5 @@ class Program
             Console.WriteLine($"Código: {produto.Key}, Nome: {produto.Value.Nome}, Categoria: {produto.Value.Categoria}, Preço: {produto.Value.Preço}, Quantidade: {produto.Value.Quantidade}   unidades");
         }
     Console.WriteLine();
-   
     }
-
 }
